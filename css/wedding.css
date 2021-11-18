@@ -5,7 +5,6 @@
 body {
   background-color: #F4B1A5;
   font-family: 'Dancing Script', sans-serif;
-
 }
 
 h1 {
@@ -13,6 +12,16 @@ h1 {
   margin: 10px 0 30px;
   line-height: 100px;
   text-align: center;
+  color: rgba(255, 255, 255, 0.473);
+  position: relative;
+}
+
+.container {
+  background-image: url(file:///Users/tugceartikaslan/Desktop/wedding/images/heroimage.jpg);
+  padding: 200px 100px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .container span {
@@ -56,12 +65,12 @@ li > a:hover::after, li > a.active-nav::after {
   background: white;
 }
 
-.container img {
+/* .container img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   width: 100%;
   filter: opacity(50%);
-}
+} */
 
 nav {
   display: flex;
@@ -112,8 +121,7 @@ nav {
 
 .nav-active {
   transform: translateX(0);
-  background-color: white;
-  z-index: 1;
+  background-color: transparent;
 }
 
 .nav-active a {
@@ -169,7 +177,7 @@ nav {
 .address-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
+  margin-left: 24px;
 }
 
 #timer {  
@@ -215,9 +223,9 @@ font-weight: 400;
 
   .menu {
     position: fixed;
-    top: 5vh;
+    top: 8vh;
     right: 0;
-    width: 60%;
+    width: 20vh;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -240,9 +248,19 @@ font-weight: 400;
     text-align: center;
     flex-direction: column;
   }
+
+  .nav-active {
+    transform: translateX(0);
+    background: #f4b1a5cf;
+    z-index: 1;
+    position: relative;
+  }
+
+  .nav-active a {
+    color: white;
+  }
 }
 
-   
 @media screen and (max-width: 400px) {
 
   h1 {
@@ -252,5 +270,7 @@ font-weight: 400;
   .container span {
     font-size: 20px;
   }
-
+  #timer {  
+    font-size: 2em;
+  }
 }
