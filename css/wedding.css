@@ -5,6 +5,8 @@
 body {
   background-color: #F4B1A5;
   font-family: 'Dancing Script', sans-serif;
+  background: rgb(227,147,219);
+background: linear-gradient(45deg, rgba(227,147,219,1) 4%, rgba(156,115,128,1) 43%, rgba(237,159,208,1) 91%);
 }
 
 h1 {
@@ -18,10 +20,12 @@ h1 {
 
 .container {
   background-image: url(file:///Users/tugceartikaslan/Desktop/wedding/images/heroimage.jpg);
-  padding: 200px 100px;
+  padding: 150px 0;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
+
 }
 
 .container span {
@@ -153,12 +157,11 @@ nav {
   }
 }
 
-
 .details {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #F4B1A5;
+  /* background-color: #F4B1A5; */
   margin-top: 100px;
 }
 
@@ -180,16 +183,25 @@ nav {
   margin-left: 24px;
 }
 
+.banner-icon {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+
+}
+
 #timer {  
-font-size: 3em;
-font-weight: 100;
+font-size: 32px;
+font-weight: 300;
 color: white;
 text-shadow: 0 0 20px #107dac;
-padding: 70px 50px;
 font-family: "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif; 
 display: fixed;
 justify-content: center;
 text-align: center;
+/* display: inline-block; */
+padding: 50px 20px 50px 20px;
+width: 100%;
 }  
 
 #timer div {
@@ -218,12 +230,12 @@ font-weight: 400;
 
   .burger {
     display: block;
-
+    z-index: 1;
   }
 
   .menu {
     position: fixed;
-    top: 8vh;
+    top: 0;
     right: 0;
     width: 20vh;
     height: 30vh;
@@ -234,6 +246,12 @@ font-weight: 400;
     justify-content: space-around;
     transform: translateX(100%);
     transition: 0.5s ease;
+  }
+
+  .map {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
   }
 
   nav {
@@ -253,7 +271,7 @@ font-weight: 400;
     transform: translateX(0);
     background: #f4b1a5cf;
     z-index: 1;
-    position: relative;
+    position: absolute;
   }
 
   .nav-active a {
