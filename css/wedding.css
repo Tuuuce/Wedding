@@ -25,17 +25,16 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-
 }
 
 .container span {
   display: inline-block;
   width: 100%;
   font-size: 40px;
-  background-color: #f1836fad;
+  background-color: rgba(219, 193, 217, 0.521);
   font-weight: 800;
   text-align: center;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.644);
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -168,6 +167,7 @@ nav {
 .detaylar {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
+  color: #eaeaed;
 }
 
 .detaybaslik {
@@ -175,6 +175,7 @@ nav {
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 16px;
+  color: #eaeaed;
 }
 
 .address-wrapper {
@@ -187,7 +188,6 @@ nav {
   width: 100px;
   height: 100px;
   margin-left: 50px;
-
 }
 
 #timer {  
@@ -279,16 +279,19 @@ font-weight: 400;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .container span {
-    font-size: 20px;
+    font-size: 25px;
   }
   #timer {  
     font-size: 2em;
+  }
+  .banner-icon {
+    margin-left: 88px;
   }
 }
