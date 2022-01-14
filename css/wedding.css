@@ -6,7 +6,7 @@ body {
   background-color: #F4B1A5;
   font-family: 'Dancing Script', sans-serif;
   background: rgb(227,147,219);
-background: linear-gradient(45deg, rgba(227,147,219,1) 4%, rgba(156,115,128,1) 43%, rgba(237,159,208,1) 91%);
+  background: linear-gradient(45deg, rgba(227,147,219,1) 4%, rgba(156,115,128,1) 43%, rgba(237,159,208,1) 91%);
 }
 
 h1 {
@@ -160,7 +160,6 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* background-color: #F4B1A5; */
   margin-top: 100px;
 }
 
@@ -171,8 +170,8 @@ nav {
 }
 
 .detaybaslik {
-  font-family: 'Nunito', sans-serif;
-  font-size: 24px;
+  /* font-family: 'Nunito', sans-serif; */
+  font-size: 36px;
   font-weight: 800;
   margin-bottom: 16px;
   color: #eaeaed;
@@ -184,10 +183,83 @@ nav {
   margin-left: 24px;
 }
 
+section {
+  height: 30vh;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;;
+}
+
+.messagebox {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgb(83, 82, 82);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: darkmagenta;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 .banner-icon {
   width: 100px;
   height: 100px;
   margin-left: 50px;
+}
+
+.RSVP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.rsvp-baslik {
+  font-size: 36px;
+  color: #eaeaed;
+  font-weight: 800;
+}
+
+.rsvp-detay {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: #eaeaed;
 }
 
 #timer {  
@@ -251,7 +323,7 @@ font-weight: 400;
   .map {
     width: 300px;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
   nav {
@@ -260,6 +332,13 @@ font-weight: 400;
 
   .menu li{
     opacity: 0;
+  }
+
+  .rsvp-detay {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #eaeaed;
+    text-align: center;
   }
 
   .details {
@@ -277,6 +356,11 @@ font-weight: 400;
   .nav-active a {
     color: white;
   }
+
+  .banner-icon {
+    margin-left: 88px;
+  }
+}
 }
 
 @media screen and (max-width: 450px) {
